@@ -1,6 +1,23 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
+  { 
+    name: "Solutions", 
+    link: "#projects",
+    subItems: [
+      { name: "Interview Scheduling Agent", link: "#projects" },
+      { name: "Matching Agent", link: "#projects" },
+      { name: "Sourcing Agent", link: "#projects" },
+      { name: "Interview Agent", link: "#projects" },
+      { name: "Outreach Agent", link: "#projects" }
+    ]
+  },
+  { 
+    name: "About", 
+    link: "#about",
+    subItems: [
+      { name: "Our Approach", link: "#approach" },
+      { name: "Why Choose Us", link: "#experience" }
+    ]
+  },
   { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
@@ -8,17 +25,17 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "Enterprise-grade AI infrastructure built for scale",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/backgrounds/b1.svg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "24/7 global operations across all time zones",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -28,8 +45,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "Our AI Tech Stack",
+    description: "Cutting-edge AI models",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,28 +55,27 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Passionate about revolutionizing talent acquisition",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
-    img: "/grid.svg",
-    spareImg: "/b4.svg",
+    img: "/backgrounds/grid.svg",
+    spareImg: "/backgrounds/b4.svg",
   },
-
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Building the next generation of recruiting AI",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
-    img: "/b5.svg",
-    spareImg: "/grid.svg",
+    img: "/backgrounds/b5.svg",
+    spareImg: "/backgrounds/grid.svg",
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Ready to transform your recruiting process?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,68 +88,76 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Interview Scheduling Agent",
+    des: "AI-powered scheduling that coordinates interviews across time zones, syncs calendars, and eliminates back-and-forth emails.",
+    img: "/projects/p1.svg",
+    iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/tech-icons/three.svg", "/tech-icons/gsap.svg"],
+    link: "#",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Matching Agent",
+    des: "Advanced AI algorithms that analyze skills, experience, and culture fit to match candidates with the perfect opportunities.",
+    img: "/projects/p2.svg",
+    iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/companies/stream.svg", "/tech-icons/c.svg"],
+    link: "#",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Sourcing Agent",
+    des: "Intelligent talent discovery that scours multiple platforms to find and qualify top candidates matching your criteria.",
+    img: "/projects/p3.svg",
+    iconLists: ["/tech-icons/re.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/tech-icons/three.svg", "/tech-icons/c.svg"],
+    link: "#",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Interview Agent",
+    des: "AI-assisted interviewing that conducts preliminary screenings, assesses candidates, and provides detailed evaluation reports.",
+    img: "/projects/p4.svg",
+    iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/tech-icons/three.svg", "/tech-icons/gsap.svg"],
+    link: "#",
+  },
+  {
+    id: 5,
+    title: "Outreach Agent",
+    des: "Personalized candidate engagement with AI-crafted messages that resonate and convert passive candidates into active applicants.",
+    img: "/projects/p1.svg",
+    iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/companies/stream.svg", "/tech-icons/fm.svg"],
+    link: "#",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Rangam's AI agents have completely transformed our hiring process. We've reduced time-to-hire by 60% while improving candidate quality. The Interview Scheduling Agent alone saves our team 20+ hours per week.",
+    name: "Sarah Mitchell",
+    title: "VP of Talent Acquisition, TechCorp Global",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The Matching Agent's accuracy is incredible. It understands not just skills but cultural fit, which has dramatically reduced our turnover rates. This is the future of recruitment.",
+    name: "David Chen",
+    title: "Chief People Officer, InnovateTech",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "We were skeptical about AI in recruiting, but Rangam proved us wrong. Their Sourcing Agent found candidates we would have never discovered through traditional methods.",
+    name: "Jennifer Adams",
+    title: "Head of HR, Enterprise Solutions Inc.",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "The seamless integration of all Rangam agents creates a recruitment pipeline that's faster, smarter, and more efficient than anything we've used before. Highly recommended!",
+    name: "Michael Roberts",
+    title: "Director of Operations, Staffing Partners",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Rangam's Outreach Agent helped us engage passive candidates with personalized messages that actually get responses. Our response rates jumped from 5% to 35%.",
+    name: "Amanda Foster",
+    title: "Recruiting Manager, Growth Dynamics",
   },
 ];
 
@@ -141,77 +165,80 @@ export const companies = [
   {
     id: 1,
     name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
+    img: "/companies/cloud.svg",
+    nameImg: "/companies/cloudName.svg",
   },
   {
     id: 2,
     name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
+    img: "/companies/app.svg",
+    nameImg: "/companies/appName.svg",
   },
   {
     id: 3,
     name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
+    img: "/companies/host.svg",
+    nameImg: "/companies/hostName.svg",
   },
   {
     id: 4,
     name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
+    img: "/companies/s.svg",
+    nameImg: "/companies/streamName.svg",
   },
   {
     id: 5,
     name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    img: "/companies/dock.svg",
+    nameImg: "/companies/dockerName.svg",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "AI-First Approach",
+    desc: "Our agents are built from the ground up with cutting-edge AI, not legacy systems with AI bolted on.",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/experience/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    title: "Seamless Integration",
+    desc: "Connect with your existing ATS, HRIS, and communication tools without disrupting workflows.",
+    className: "md:col-span-2",
+    thumbnail: "/experience/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    title: "Enterprise Security",
+    desc: "SOC 2 compliant with end-to-end encryption. Your candidate data is always protected.",
+    className: "md:col-span-2",
+    thumbnail: "/experience/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Proven Results",
+    desc: "60% faster time-to-hire, 40% cost reduction, and 35% improvement in candidate quality metrics.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/experience/exp4.svg",
   },
 ];
 
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/social/git.svg",
+    link: "https://github.com/rangam",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/social/twit.svg",
+    link: "https://twitter.com/rangam",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/social/link.svg",
+    link: "https://linkedin.com/company/rangam",
   },
 ];
