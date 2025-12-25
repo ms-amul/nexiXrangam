@@ -15,16 +15,16 @@ const Footer = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to <span className="text-purple">transform</span> your
           recruiting process?
         </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Let&apos;s discuss how Rangam&apos;s AI agents can accelerate your hiring
+        <p className="text-white-200 md:mt-10 my-5">
+          Let&apos;s discuss how TalentArbor&apos;s AI agents can accelerate your hiring
           and help you find the best talent faster.
         </p>
-        <a href="mailto:contact@rangam.ai">
+        <a href="mailto:nish@rangam.com">
           <MagicButton
             title="Get in Touch"
             icon={<FaLocationArrow />}
@@ -34,7 +34,7 @@ const Footer = () => {
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Rangam Powered by NexI
+          Copyright © 2024 TalentArbor.ai Powered by NexI
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">

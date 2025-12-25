@@ -18,7 +18,7 @@ export const navItems = [
       { name: "Why Choose Us", link: "#experience" }
     ]
   },
-  { name: "Testimonials", link: "#testimonials" },
+  // { name: "Testimonials", link: "#testimonials" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -30,7 +30,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/backgrounds/b1.svg",
+    img: "/backgrounds/1.png",
     spareImg: "",
   },
   {
@@ -98,7 +98,7 @@ export const projects = [
     id: 2,
     title: "Matching Agent",
     des: "Advanced AI algorithms that analyze skills, experience, and culture fit to match candidates with the perfect opportunities.",
-    img: "/projects/p2.svg",
+    img: "/projects/p2.png",
     iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/companies/stream.svg", "/tech-icons/c.svg"],
     link: "#",
   },
@@ -106,7 +106,7 @@ export const projects = [
     id: 3,
     title: "Sourcing Agent",
     des: "Intelligent talent discovery that scours multiple platforms to find and qualify top candidates matching your criteria.",
-    img: "/projects/p3.svg",
+    img: "/projects/p3.png",
     iconLists: ["/tech-icons/re.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/tech-icons/three.svg", "/tech-icons/c.svg"],
     link: "#",
   },
@@ -114,7 +114,7 @@ export const projects = [
     id: 4,
     title: "Interview Agent",
     des: "AI-assisted interviewing that conducts preliminary screenings, assesses candidates, and provides detailed evaluation reports.",
-    img: "/projects/p4.svg",
+    img: "/projects/p4.png",
     iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/tech-icons/three.svg", "/tech-icons/gsap.svg"],
     link: "#",
   },
@@ -122,7 +122,7 @@ export const projects = [
     id: 5,
     title: "Outreach Agent",
     des: "Personalized candidate engagement with AI-crafted messages that resonate and convert passive candidates into active applicants.",
-    img: "/projects/p1.svg",
+    img: "/projects/p5.png",
     iconLists: ["/tech-icons/next.svg", "/tech-icons/tail.svg", "/tech-icons/ts.svg", "/companies/stream.svg", "/tech-icons/fm.svg"],
     link: "#",
   },
@@ -204,25 +204,25 @@ export const workExperience = [
   },
   {
     id: 2,
+    title: "Proven Results",
+    desc: "60% faster time-to-hire, 40% cost reduction, and 35% improvement in candidate quality metrics.",
+    className: "md:col-span-2",
+    thumbnail: "/experience/exp4.svg",
+  },
+  {
+    id: 3,
     title: "Seamless Integration",
     desc: "Connect with your existing ATS, HRIS, and communication tools without disrupting workflows.",
     className: "md:col-span-2",
     thumbnail: "/experience/exp2.svg",
   },
   {
-    id: 3,
+    id: 4,
     title: "Enterprise Security",
     desc: "SOC 2 compliant with end-to-end encryption. Your candidate data is always protected.",
     className: "md:col-span-2",
     thumbnail: "/experience/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Proven Results",
-    desc: "60% faster time-to-hire, 40% cost reduction, and 35% improvement in candidate quality metrics.",
-    className: "md:col-span-2",
-    thumbnail: "/experience/exp4.svg",
-  },
+  }
 ];
 
 export const socialMedia = [

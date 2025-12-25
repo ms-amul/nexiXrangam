@@ -89,3 +89,7 @@
     @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
   }
 }
+
+html, body{
+  overscroll-behavior: none;
+}

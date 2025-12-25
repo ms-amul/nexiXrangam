@@ -1,14 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700", "800"],
+  variable: "--font-jakarta",
+});
 
 export const metadata: Metadata = {
-  title: "TalentArbor.AI",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  title: "TalentArbor.AI | AI-Powered Talent Acquisition",
+  description: "Intelligent AI agents that source, schedule, match, and engage candidates—accelerating your hiring with precision.",
 };
 
 export default function RootLayout({
@@ -21,7 +25,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
-      <body className={inter.className}>
+      <body className={`${jakarta.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

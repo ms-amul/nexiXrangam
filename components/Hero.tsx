@@ -39,8 +39,20 @@ const Hero = () => {
 
           {/* Left Content */}
           <div className="flex flex-col items-center lg:items-start text-center lg:text-left max-w-xl">
-            <div className="inline-block mb-4 px-4 py-2 rounded-full bg-purple-500/10 border border-purple-500/20">
-              <span className="text-sm font-medium text-purple-400 tracking-wide">
+            {/* Badge */}
+            <div
+              className="inline-flex items-center gap-2 mb-4 px-4 py-2 rounded-full animate-pulse"
+              style={{
+                background: "rgba(139, 92, 246, 0.2)",
+                border: "1px solid rgba(139, 92, 246, 0.5)",
+                boxShadow: "0 0 20px rgba(139, 92, 246, 0.3)",
+              }}
+            >
+              <span
+                className="w-2 h-2 rounded-full"
+                style={{ background: "#a78bfa" }}
+              />
+              <span style={{ color: "#c4b5fd", fontWeight: 600, fontSize: "14px", letterSpacing: "0.05em" }}>
                 NEXI HUB
               </span>
             </div>

@@ -26,6 +26,10 @@ const config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+      },
       colors: {
         black: {
           DEFAULT: "#000",
@@ -145,6 +149,10 @@ const config = {
           to: {
             transform: "translate(calc(-50% - 0.5rem))",
           },
+        },
+        "shimmer-slide": {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(100%)" },
         },
       },
       animation: {
