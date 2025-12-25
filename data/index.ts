@@ -242,3 +242,27 @@ export const socialMedia = [
     link: "https://linkedin.com/company/rangam",
   },
 ];
+
+export const approachPhases = [
+  {
+    id: 1,
+    phase: "01",
+    title: "Foundation",
+    subtitle: "Core Hiring Acceleration",
+    description: "Understand jobs intelligently and prioritize them with context, urgency, and historical success patterns. Match the right candidates in minutes, using learning-based semantic and historical intelligence. Personalize outreach at scale to maximize candidate responses via email and SMS.",
+  },
+  {
+    id: 2,
+    phase: "02",
+    title: "Automation with Intelligence",
+    subtitle: "Screening & Coordination",
+    description: "Screen candidates through natural AI phone conversations and qualify them with confidence scores. Eliminate scheduling friction by automatically coordinating interviews across calendars and time zones. Track the hiring pipeline predictively, identifying bottlenecks before they slow hiring.",
+  },
+  {
+    id: 3,
+    phase: "03",
+    title: "Proactive & Predictive Intelligence",
+    subtitle: "Scale & Strategy",
+    description: "Proactively source high-quality candidates before roles are even opened. Predict hiring outcomes and success probability before client submission. Continuously learn and optimize every hiring decision with each placement.",
+  },
+];
