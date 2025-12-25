@@ -1,18 +1,17 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
-import { useParams, useRouter } from "next/navigation";
-import { projects, navItems } from "@/data";
+import MagicButton from "@/components/MagicButton";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { Spotlight } from "@/components/ui/Spotlight";
-import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
-import { Button as MovingBorderButton } from "@/components/ui/MovingBorders";
 import { StickyScroll } from "@/components/ui/StickyScrollReveal";
+import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { TracingBeam } from "@/components/ui/TracingBeam";
-import { FaArrowLeft, FaCheck, FaRocket } from "react-icons/fa";
+import { navItems, projects } from "@/data";
 import { motion } from "framer-motion";
-import MagicButton from "@/components/MagicButton";
 import Link from "next/link";
+import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+import { FaArrowLeft, FaRocket } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const ProjectDetails = () => {
@@ -59,7 +58,7 @@ const ProjectDetails = () => {
             <TracingBeam className="px-6 pt-36 pb-20">
 
                 {/* Back Link */}
-                <Link href="/#projects" className="inline-flex items-center gap-2 text-white/50 hover:text-white mb-10 transition-colors pl-4">
+                <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white mb-10 transition-colors pl-4">
                     <FaArrowLeft /> Back to Projects
                 </Link>
 
