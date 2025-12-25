@@ -100,7 +100,7 @@
   }
 
   .dark .shimmer-text {
-    background: linear-gradient(to right, #ffffff 20%, #c084fc 40%, #c084fc 60%, #ffffff 80%);
+    background: linear-gradient(to right, #ffffff 20%, #e5d9f2 40%, #ebd5ff 60%, #ffffff 80%);
     background-size: 200% auto;
     color: transparent;
     -webkit-background-clip: text;

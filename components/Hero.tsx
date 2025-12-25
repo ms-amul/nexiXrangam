@@ -57,9 +57,9 @@ const Hero = () => {
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 shimmer-text">
               TalentArbor
-              <span className="text-purple-400">.AI</span>
+              <span className="text-purple-400">.ai</span>
             </h1>
 
             <p className="text-lg md:text-xl text-white/60 leading-relaxed mb-8">
