@@ -88,8 +88,40 @@
   .hero-img_res {
     @apply max-lg:-top-40 max-lg:left-[calc(50%-280px)] max-lg:w-[1160px] max-md:bottom-[-590px] max-md:left-[calc(50%-390px)] max-md:top-auto;
   }
+
+  .shimmer-text {
+    background: linear-gradient(to right, #4b5563 20%, #a855f7 40%, #a855f7 60%, #4b5563 80%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    animation: shimmer 2s linear infinite;
+  }
+
+  .dark .shimmer-text {
+    background: linear-gradient(to right, #ffffff 20%, #c084fc 40%, #c084fc 60%, #ffffff 80%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    animation: shimmer 2s linear infinite;
+  }
 }
 
-html, body{
+/* Custom Shimmer Effect - Global */
+@keyframes shimmer {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+html,
+body {
   overscroll-behavior: none;
 }

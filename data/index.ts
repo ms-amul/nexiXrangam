@@ -2,23 +2,54 @@ export const navItems = [
   { 
     name: "Solutions", 
     link: "#projects",
+    type: "mega",
     subItems: [
-      { name: "Interview Scheduling Agent", link: "#projects" },
-      { name: "Matching Agent", link: "#projects" },
-      { name: "Sourcing Agent", link: "#projects" },
-      { name: "Interview Agent", link: "#projects" },
-      { name: "Outreach Agent", link: "#projects" }
+      { 
+        name: "AI Sourcing", 
+        link: "#sourcing",
+        desc: "Quickly find top quality candidates",
+        icon: "FaSearch",
+        status: "online"
+      },
+      { 
+        name: "Applicant Match", 
+        link: "#match",
+        desc: "Automated resume screening & ranking",
+        icon: "FaUserCheck",
+        status: "online"
+      },
+      { 
+        name: "AI Scheduling", 
+        link: "#scheduling",
+        desc: "Automated coordination & booking",
+        icon: "FaCalendarAlt",
+        status: "offline"
+      },
+      { 
+        name: "Campaigns & Nurturing", 
+        link: "#campaigns",
+        desc: "Personalized outreach sequences",
+        icon: "FaBullhorn",
+        status: "offline"
+      },
+      { 
+        name: "Talent Insights", 
+        link: "#insights",
+        desc: "Real-time market intelligence",
+        icon: "FaChartLine",
+        status: "offline"
+      },
+      { 
+        name: "Analytics", 
+        link: "#analytics",
+        desc: "Pipeline performance metrics",
+        icon: "FaChartBar",
+        status: "offline"
+      }
     ]
   },
-  { 
-    name: "About", 
-    link: "#about",
-    subItems: [
-      { name: "Our Approach", link: "#approach" },
-      { name: "Why Choose Us", link: "#experience" }
-    ]
-  },
-  // { name: "Testimonials", link: "#testimonials" },
+  { name: "About", link: "#experience" },
+  { name: "Approach", link: "#approach" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -239,7 +270,7 @@ export const socialMedia = [
   {
     id: 3,
     img: "/social/link.svg",
-    link: "https://linkedin.com/company/rangam",
+    link: "https://www.linkedin.com/in/nishparikh1/",
   },
 ];
 

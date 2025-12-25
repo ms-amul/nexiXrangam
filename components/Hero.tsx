@@ -76,7 +76,7 @@ const Hero = () => {
           </div>
 
           {/* Right Image - Large */}
-          <div className="absolute -top-[78%] left-[35%] w-[1030px] pointer-events-none hero-img_res">
+          <div className="hidden lg:block absolute -top-[78%] left-[35%] w-[1030px] pointer-events-none hero-img_res">
             <img
               src="/home/hero.png"
               className="size-1230 max-lg:h-auto"

@@ -198,6 +198,8 @@ const config = {
   ],
 } satisfies Config;
 
+// Force rebuild
+
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
