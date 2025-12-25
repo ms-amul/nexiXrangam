@@ -7,6 +7,7 @@ import { StickyScroll } from "@/components/ui/StickyScrollReveal";
 import { TextGenerateEffect } from "@/components/ui/TextGenerateEffect";
 import { TracingBeam } from "@/components/ui/TracingBeam";
 import { navItems, projects } from "@/data";
+import { VideoCard3D } from "@/components/ui/VideoCard3D";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -58,7 +59,7 @@ const ProjectDetails = () => {
             <TracingBeam className="px-6 pt-36 pb-20">
 
                 {/* Back Link */}
-                <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white mb-10 transition-colors pl-4">
+                <Link href="/" className="inline-flex items-center gap-2 text-white/50 hover:text-white mb-5 transition-colors pl-4">
                     <FaArrowLeft /> Back to Projects
                 </Link>
 
@@ -74,11 +75,11 @@ const ProjectDetails = () => {
                         </h1>
                     </motion.div>
 
-                    <div className="mb-10 max-w-2xl">
+                    <div className="mb-5 max-w-2xl">
                         <TextGenerateEffect words={project.des} className="text-xl md:text-2xl text-purple font-light" />
                     </div>
 
-                    <div className="flex flex-wrap gap-4 mb-10">
+                    <div className="flex flex-wrap gap-4 mb-5">
                         {project.iconLists.map((icon: string, idx: number) => (
                             <div key={idx} className="w-12 h-12 rounded-full border border-white/[0.1] bg-black-100/50 backdrop-blur-sm flex justify-center items-center hover:scale-110 transition-transform">
                                 <img src={icon} alt="tech" className="p-2.5 w-full h-full object-contain" />
@@ -104,7 +105,7 @@ const ProjectDetails = () => {
 
                 {/* The Narrative - Deep Dive */}
                 <div className="pl-4 max-w-3xl mb-32">
-                    <div className="mb-20">
+                    <div className="mb-5">
                         <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
                             <span className="text-purple">01.</span> The Challenge
                         </h2>
@@ -113,7 +114,7 @@ const ProjectDetails = () => {
                         </p>
                     </div>
 
-                    <div className="mb-20">
+                    <div className="mb-5">
                         <h2 className="text-3xl font-bold text-white mb-6 flex items-center gap-3">
                             <span className="text-purple">02.</span> Our Solution
                         </h2>
@@ -128,11 +129,42 @@ const ProjectDetails = () => {
 
                 {/* Key Capabilities - Sticky Scroll */}
                 <div className="mb-32">
-                    <h2 className="text-3xl font-bold text-white mb-10 pl-4 flex items-center gap-3">
+                    <h2 className="text-3xl font-bold text-white mb-5 pl-4 flex items-center gap-3">
                         <span className="text-purple">03.</span> Intelligence Under the Hood
                     </h2>
                     <div className="w-full">
                         <StickyScroll content={stickyContent} />
+                    </div>
+                </div>
+
+
+
+                {/* Video Showcase Section */}
+                <div className="mb-40 pl-4 pr-4">
+                    <div className="mb-5">
+                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                            See It In <span className="text-purple">Action</span>
+                        </h2>
+                        <p className="text-white/60 text-lg">
+                            Watch how the {project.title} transforms the workflow in real-time.
+                        </p>
+                    </div>
+
+                    <div className="h-[50vh] md:h-[70vh] w-full flex items-center justify-center relative">
+                        <VideoCard3D
+                            containerClassName="w-[90vw] md:w-[70vw] lg:w-[60vw] aspect-video"
+                            className="w-full h-full"
+                        >
+                            {project.videoUrl && (
+                                <iframe
+                                    className="w-full h-full object-cover"
+                                    src={project.videoUrl}
+                                    title="Product Demo"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowFullScreen
+                                />
+                            )}
+                        </VideoCard3D>
                     </div>
                 </div>
 

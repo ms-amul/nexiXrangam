@@ -1,46 +1,46 @@
 export const navItems = [
-  { 
-    name: "Solutions", 
+  {
+    name: "Solutions",
     link: "#projects",
     type: "mega",
     subItems: [
-      { 
-        name: "AI Sourcing", 
+      {
+        name: "AI Sourcing",
         link: "/project/3",
         desc: "Quickly find top quality candidates",
         icon: "FaSearch",
         status: "online"
       },
-      { 
-        name: "Applicant Match", 
+      {
+        name: "Applicant Match",
         link: "/project/2",
         desc: "Automated resume screening & ranking",
         icon: "FaUserCheck",
         status: "online"
       },
-      { 
-        name: "AI Scheduling", 
+      {
+        name: "AI Scheduling",
         link: "/project/1",
         desc: "Automated coordination & booking",
         icon: "FaCalendarAlt",
         status: "offline"
       },
-      { 
-        name: "Campaigns & Nurturing", 
+      {
+        name: "Campaigns & Nurturing",
         link: "/project/5",
         desc: "Personalized outreach sequences",
         icon: "FaBullhorn",
         status: "offline"
       },
-      { 
-        name: "Talent Insights", 
+      {
+        name: "Talent Insights",
         link: "/project/4",
         desc: "Real-time market intelligence",
         icon: "FaChartLine",
         status: "offline"
       },
-      { 
-        name: "Analytics", 
+      {
+        name: "Analytics",
         link: "/project/4",
         desc: "Pipeline performance metrics",
         icon: "FaChartBar",
@@ -131,7 +131,8 @@ export const projects = [
       { title: "Instant Rescheduling", desc: "candidates can reschedule via text without human intervention." }
     ],
     challenges: "Coordinating 5+ stakeholders with different working hours was causing a 4-day delay in time-to-hire.",
-    solution: "Implemented an autonomous agent that accesses calendar APIs directly to book slots instantly."
+    solution: "Implemented an autonomous agent that accesses calendar APIs directly to book slots instantly.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=6m6yXG8jSw4w9WgX"
   },
   {
     id: 2,
@@ -147,7 +148,8 @@ export const projects = [
       { title: "Bias Elimination", desc: "Anonymized screening to ensure fair hiring practices." }
     ],
     challenges: "High turnover rates due to poor cultural fit despite technical alignment.",
-    solution: "Developed a dual-layer scoring system that weights cultural compatibility equal to technical prowess."
+    solution: "Developed a dual-layer scoring system that weights cultural compatibility equal to technical prowess.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=6m6yXG8jSw4w9WgX"
   },
   {
     id: 3,
@@ -163,7 +165,8 @@ export const projects = [
       { title: "Talent Pooling", desc: "Builds a pipeline of passive candidates for future needs." }
     ],
     challenges: "Recruiters spending 15 hours/week just searching for profiles.",
-    solution: "Automated the search phase, delivering a morning shortlist of 'ready-to-interview' candidates."
+    solution: "Automated the search phase, delivering a morning shortlist of 'ready-to-interview' candidates.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=6m6yXG8jSw4w9WgX"
   },
   {
     id: 4,
@@ -179,7 +182,8 @@ export const projects = [
       { title: "Instant Scorecards", desc: "Delivers a PDF report immediately after the call." }
     ],
     challenges: "Inconsistent screening quality across different recruiters.",
-    solution: "Standardized the first round with an AI agent that ensures every candidate gets the same fair chance."
+    solution: "Standardized the first round with an AI agent that ensures every candidate gets the same fair chance.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=6m6yXG8jSw4w9WgX"
   },
   {
     id: 5,
@@ -195,7 +199,8 @@ export const projects = [
       { title: "A/B Testing", desc: "Automatically optimizes subject lines for open rates." }
     ],
     challenges: "Templates were getting <2% response rates from top-tier engineers.",
-    solution: "Switched to AI-generated personalized hooks, boosting response rates to ~18%."
+    solution: "Switched to AI-generated personalized hooks, boosting response rates to ~18%.",
+    videoUrl: "https://www.youtube.com/embed/dQw4w9WgXcQ?si=6m6yXG8jSw4w9WgX"
   },
 ];
 
