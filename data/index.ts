@@ -45,6 +45,13 @@ export const navItems = [
         desc: "Pipeline performance metrics",
         icon: "FaChartBar",
         status: "offline"
+      },
+      {
+        name: "AI Calling Agent",
+        link: "/project/6",
+        desc: "Human-like AI candidate calls",
+        icon: "FaHeadset",
+        status: "online"
       }
     ]
   },
